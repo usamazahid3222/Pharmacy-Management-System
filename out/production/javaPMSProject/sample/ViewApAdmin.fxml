@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="cashierpane" prefHeight="503.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerApAdmin">
+   <children>
+      <TabPane layoutX="64.0" layoutY="35.0" prefHeight="453.0" prefWidth="589.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab text="View Cashiers">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="424.0" prefWidth="589.0">
+                           <content>
+                              <TableView fx:id="adminTable" prefHeight="486.0" prefWidth="720.0">
+                                 <columns>
+                                    <TableColumn fx:id="fName" prefWidth="110.0" text="Fname" />
+                                    <TableColumn fx:id="lName" prefWidth="110.0" text="Lname" />
+                                    <TableColumn fx:id="email" prefWidth="220.0" text="Email" />
+                                    <TableColumn fx:id="password" prefWidth="150.0" text="Password" />
+                                    <TableColumn fx:id="mobile" prefWidth="120.0" text="Mobile" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

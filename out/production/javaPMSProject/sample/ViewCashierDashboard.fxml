@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="550.0" prefWidth="850.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCashierDashboard">
+    <children>
+        <Label layoutX="157.0" layoutY="88.0" prefHeight="29.0" prefWidth="53.0" text="Date:" />
+        <TextField fx:id="date" layoutX="157.0" layoutY="111.0" prefHeight="32.0" prefWidth="95.0" promptText="Date" />
+        <Pane layoutX="4.0" layoutY="216.0" prefHeight="306.0" prefWidth="305.0" style="-fx-background-color: lightblue;">
+            <children>
+                <ScrollPane prefHeight="306.0" prefWidth="305.0">
+                    <content>
+                        <TableView fx:id="saletable" prefHeight="500.0" prefWidth="305.0">
+                            <columns>
+                                <TableColumn fx:id="name1" prefWidth="100.0" text="Name" />
+                                <TableColumn fx:id="prpcs1" prefWidth="50.0" text="P/Pc" />
+                                <TableColumn fx:id="quantity1" text="Quantity" />
+                                <TableColumn fx:id="total1" prefWidth="70.0" text="Total" />
+                            </columns>
+                        </TableView>
+                    </content></ScrollPane>
+            </children>
+        </Pane>
+        <HBox prefHeight="39.0" prefWidth="850.0" style="-fx-background-color: black;" />
+        <ScrollPane fx:id="scrollPane" layoutX="309.0" layoutY="40.0" prefHeight="350.0" prefWidth="545.0">
+            <content>
+                <TableView fx:id="medicinetable" prefHeight="500.0" prefWidth="690.0">
+                    <columns>
+                        <TableColumn fx:id="name" prefWidth="200.0" text="Name" />
+                        <TableColumn fx:id="stock" prefWidth="75.0" text="Stock" />
+                        <TableColumn fx:id="prprice" prefWidth="110.0" text="purchase price" />
+                        <TableColumn fx:id="slprice" prefWidth="110.0" text="Sale price" />
+                        <TableColumn fx:id="prpcs" prefWidth="75.0" text="P/Pc" />
+                        <TableColumn fx:id="manufac" prefWidth="120.0" text="Manufacturer" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+        <Label alignment="TOP_LEFT" layoutX="349.0" layoutY="470.0" prefHeight="52.0" prefWidth="153.0" style="-fx-border-color: black;" text="Sale:" textFill="#0f2804">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="345.0" layoutY="427.0" prefHeight="25.0" prefWidth="59.0" text="Total:">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Label>
+        <TextField fx:id="all" layoutX="390.0" layoutY="427.0" prefHeight="22.0" prefWidth="162.0" promptText="total" />
+        <Label fx:id="all1" layoutX="437.0" layoutY="470.0" prefHeight="29.0" prefWidth="68.0">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Label>
+        <Button fx:id="startsale" layoutX="578.0" layoutY="409.0" mnemonicParsing="false" onAction="#goToPrintBill" prefHeight="58.0" prefWidth="113.0" text="Enter">
+         <font>
+            <Font size="24.0" />
+         </font></Button>
+        <TextField fx:id="search" layoutX="13.0" layoutY="49.0" prefHeight="32.0" prefWidth="275.0" promptText="Search" />
+        <Button layoutX="195.0" layoutY="169.0" mnemonicParsing="false" onAction="#show" prefHeight="32.0" prefWidth="68.0" text="Add " />
+        <Label layoutX="13.0" layoutY="93.0" prefHeight="19.0" prefWidth="53.0" text="Quantity" />
+        <TextField fx:id="quantity" layoutX="13.0" layoutY="115.0" prefHeight="25.0" prefWidth="68.0" promptText="Quantity" />
+      <Button fx:id="goToMainStage" layoutX="717.0" layoutY="407.0" mnemonicParsing="false" onAction="#goToMainStage" prefHeight="58.0" prefWidth="119.0" text="SignOut">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

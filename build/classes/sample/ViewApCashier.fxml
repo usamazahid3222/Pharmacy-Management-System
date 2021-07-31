@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="apDashboard" prefHeight="503.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerApCashier">
+    <children>
+        <TabPane layoutX="54.0" layoutY="25.0" prefHeight="453.0" prefWidth="589.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="View Cashiers">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ScrollPane prefHeight="424.0" prefWidth="589.0">
+                                    <content>
+                                        <TableView prefHeight="486.0" prefWidth="585.0">
+                                            <columns>
+                                                <TableColumn prefWidth="110.0" text="Fullname" />
+                                                <TableColumn prefWidth="220.0" text="Username" />
+                                                <TableColumn prefWidth="150.0" text="password" />
+                                                <TableColumn prefWidth="100.0" text="Edit" />
+                                            </columns>
+                                        </TableView>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

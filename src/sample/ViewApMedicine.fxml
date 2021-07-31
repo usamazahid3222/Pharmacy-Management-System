@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="medicinepane" prefHeight="503.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerApMedicine">
+   <children>
+      <TabPane layoutX="64.0" layoutY="35.0" prefHeight="453.0" prefWidth="589.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="viewmed" text="View Medicine">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane prefHeight="424.0" prefWidth="589.0">
+                           <content>
+                              <TableView fx:id="medtable" prefHeight="423.0" prefWidth="790.0">
+                                 <columns>
+                                    <TableColumn fx:id="name" prefWidth="250.0" text="Name" />
+                                    <TableColumn fx:id="stock" prefWidth="70.0" text="Stock" />
+                                    <TableColumn fx:id="prprice" prefWidth="110.0" text="Purcahse Price" />
+                                    <TableColumn fx:id="slprice" prefWidth="110.0" text="Sale Price" />
+                                    <TableColumn fx:id="prpcs" prefWidth="90.0" text="P/Pcs" />
+                                    <TableColumn fx:id="manufac" prefWidth="150.0" text="Manufacturer" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="addmed" text="Add Medicine">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <ScrollPane layoutX="24.0" layoutY="25.0" prefHeight="390.0" prefWidth="549.0">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="548.0">
+                                 <children>
+                                    <Button layoutX="54.0" layoutY="410.0" mnemonicParsing="false" onAction="#saveMedicine" text="save">
+                                       <font>
+                                          <Font name="System Bold" size="17.0" />
+                                       </font>
+                                    </Button>
+                                    <Label layoutX="40.0" layoutY="31.0" text="name" />
+                                    <Label layoutX="31.0" layoutY="93.0" text="purchase price" />
+                                    <Label layoutX="222.0" layoutY="93.0" text="sale price" />
+                                    <Label layoutX="34.0" layoutY="307.0" text="Manufacturer" />
+                                    <Label layoutX="41.0" layoutY="240.0" text="P/Pcs" />
+                                    <TextField fx:id="medicineNameTF" layoutX="34.0" layoutY="48.0" prefHeight="29.0" prefWidth="327.0" promptText="Medicine Name" />
+                                    <TextField fx:id="purchasePriceTF" layoutX="34.0" layoutY="110.0" prefHeight="29.0" prefWidth="81.0" />
+                                    <TextField fx:id="manufacturerTF" layoutX="34.0" layoutY="324.0" prefHeight="29.0" prefWidth="327.0" promptText="Manufacturer" />
+                                    <TextField fx:id="pcsPriceTF" layoutX="39.0" layoutY="261.0" prefHeight="29.0" prefWidth="45.0" />
+                                    <TextField fx:id="salePriceTF" layoutX="222.0" layoutY="110.0" prefHeight="29.0" prefWidth="104.0" />
+                                    <TextField fx:id="stockTF" layoutX="32.0" layoutY="186.0" prefHeight="29.0" prefWidth="74.0" />
+                                    <Label layoutX="31.0" layoutY="169.0" text="Stock" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

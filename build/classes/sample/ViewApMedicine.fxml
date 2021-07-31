@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="cashierpane" prefHeight="503.0" prefWidth="697.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerApMedicine">
+    <children>
+        <TabPane layoutX="54.0" layoutY="25.0" prefHeight="453.0" prefWidth="589.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="View Medicine">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ScrollPane prefHeight="424.0" prefWidth="589.0">
+                                    <content>
+                                        <TableView prefHeight="423.0" prefWidth="802.0">
+                                            <columns>
+                                                <TableColumn prefWidth="250.0" text="Name" />
+                                                <TableColumn prefWidth="70.0" text="Stock" />
+                                                <TableColumn prefWidth="110.0" text="Purcahse Price" />
+                                                <TableColumn prefWidth="110.0" text="Sale Price" />
+                                                <TableColumn prefWidth="90.0" text="P/Pcs" />
+                                                <TableColumn prefWidth="150.0" text="Manufacturer" />
+                                            </columns>
+                                        </TableView>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Add Medicine">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <ScrollPane layoutX="24.0" layoutY="25.0" prefHeight="390.0" prefWidth="549.0">
+                                    <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="480.0" prefWidth="548.0">
+                                            <children>
+                                                <Button layoutX="54.0" layoutY="410.0" mnemonicParsing="false" text="save">
+                                                    <font>
+                                                        <Font name="System Bold" size="17.0" />
+                                                    </font>
+                                                </Button>
+                                                <Label layoutX="40.0" layoutY="31.0" text="name" />
+                                                <Label layoutX="31.0" layoutY="93.0" text="purchase price" />
+                                                <Label layoutX="222.0" layoutY="93.0" text="sale price" />
+                                                <Label layoutX="34.0" layoutY="156.0" text="Manufacturer" />
+                                                <Label layoutX="428.0" layoutY="93.0" text="P/Pcs" />
+                                                <TextField layoutX="34.0" layoutY="48.0" prefHeight="29.0" prefWidth="327.0" />
+                                                <TextField layoutX="34.0" layoutY="110.0" prefHeight="29.0" prefWidth="81.0" />
+                                                <TextField layoutX="34.0" layoutY="173.0" prefHeight="29.0" prefWidth="327.0" />
+                                                <TextField layoutX="428.0" layoutY="110.0" prefHeight="29.0" prefWidth="45.0" />
+                                                <TextField layoutX="222.0" layoutY="110.0" prefHeight="29.0" prefWidth="104.0" />
+                                            </children>
+                                        </AnchorPane>
+                                    </content>
+                                </ScrollPane>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>

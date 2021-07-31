@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="781.0" style="-fx-background-color: #273746;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCashier">
+    <children>
+        <Label layoutX="182.0" layoutY="47.0" prefHeight="50.0" prefWidth="376.0" text="Cashier SignIn" textFill="#2ecc71" underline="true">
+            <font>
+                <Font name="Arial Bold" size="50.0" />
+            </font>
+            <effect>
+                <DropShadow height="23.97" radius="14.45" width="35.83" />
+            </effect>
+        </Label>
+        <Label layoutX="211.0" layoutY="163.0" prefHeight="24.0" prefWidth="90.0" text="Email:" textFill="#2ecc71">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label layoutX="211.0" layoutY="267.0" prefHeight="24.0" prefWidth="90.0" text="Password:" textFill="#2ecc71">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <TextField fx:id="emailTF" layoutX="211.0" layoutY="187.0" prefHeight="41.0" prefWidth="318.0" promptText="Email">
+            <effect>
+                <DropShadow />
+            </effect></TextField>
+        <PasswordField fx:id="passwordPF" layoutX="211.0" layoutY="291.0" prefHeight="41.0" prefWidth="318.0" promptText="password">
+            <effect>
+                <DropShadow />
+            </effect></PasswordField>
+        <Button fx:id="signIn" layoutX="317.0" layoutY="366.0" mnemonicParsing="false" onAction="#cashierSignIn" prefHeight="32.0" prefWidth="105.0" style="-fx-background-color: #2ecc71;" text="Sign In ">
+            <effect>
+                <DropShadow />
+            </effect></Button>
+      <Button layoutX="53.0" layoutY="408.0" mnemonicParsing="false" onAction="#goToFirstStage" prefHeight="38.0" prefWidth="84.0" style="-fx-background-color: #B2BABB;" text="Go Back" />
+    </children>
+</AnchorPane>

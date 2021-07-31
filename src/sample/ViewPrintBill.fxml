@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="503.0" prefWidth="697.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerPrintBill">
+    <children>
+        <Pane layoutX="190.0" layoutY="16.0" prefHeight="471.0" prefWidth="318.0" style="-fx-background-color: white;">
+            <children>
+                <Label alignment="CENTER" layoutX="57.0" layoutY="26.0" prefHeight="38.0" prefWidth="204.0" text="FUUS Pharmacy">
+                    <font>
+                        <Font name="System Bold" size="23.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" layoutX="95.0" layoutY="58.0" prefHeight="15.0" prefWidth="129.0" text="iiui,Islamabad">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Label>
+                <Label layoutX="23.0" layoutY="100.0" text="Bill No." />
+                <Label layoutX="160.0" layoutY="100.0" text="Date:" />
+                <Label layoutX="23.0" layoutY="137.0" prefHeight="17.0" prefWidth="52.0" text="Name:" />
+                <TableView layoutX="5.0" layoutY="175.0" prefHeight="200.0" prefWidth="309.0">
+                    <columns>
+                        <TableColumn prefWidth="120.0" text="Item Name" />
+                        <TableColumn prefWidth="40.0" text="Qty" />
+                        <TableColumn prefWidth="75.0" text="Price" />
+                        <TableColumn prefWidth="75.0" text="Total" />
+                    </columns>
+                </TableView>
+                <Label layoutX="15.0" layoutY="387.0" text="Total Item:" />
+                <Label layoutX="13.0" layoutY="420.0" text="Given :" />
+                <Label layoutX="143.0" layoutY="420.0" prefHeight="17.0" prefWidth="62.0" text="Remaining:" />
+                <Label alignment="CENTER" layoutX="74.0" layoutY="449.0" prefHeight="17.0" prefWidth="171.0" text="Developed By FUUS">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Text layoutX="65.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Uzair" wrappingWidth="218.13671875" />
+                <Text layoutX="65.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1017" wrappingWidth="73.13671875" />
+                <Text layoutX="200.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2018/10/5" wrappingWidth="89.13671875" />
+                <Text layoutX="75.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1017" wrappingWidth="73.13671875" />
+                <Text layoutX="49.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1000" wrappingWidth="73.13671875" />
+                <Text layoutX="208.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="400" wrappingWidth="73.13671875" />
+                <Label layoutX="147.0" layoutY="387.0" text="net :" />
+                <Text layoutX="208.0" layoutY="400.0" strokeType="OUTSIDE" strokeWidth="0.0" text="600" wrappingWidth="73.13671875" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>
